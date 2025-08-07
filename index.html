@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steal a Brainrot - Index</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Steal a Brainrot - Value List</h1>
+            <p class="subtitle">Complete Brainrot Index & Efficiency Calculator</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search by name...">
+                <select id="rarityFilter">
+                    <option value="all">All Rarities</option>
+                    <option value="Common">Common</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Legendary">Legendary</option>
+                    <option value="Mythic">Mythic</option>
+                    <option value="Brainrot God">Brainrot God</option>
+                    <option value="Secret">Secret</option>
+                </select>
+            </div>
+            <div class="sort-options">
+                <button class="sort-btn active" data-sort="efficiency">Best Value</button>
+                <button class="sort-btn" data-sort="income">Highest Income</button>
+                <button class="sort-btn" data-sort="cost">Lowest Cost</button>
+                <button class="sort-btn" data-sort="name">Name (A-Z)</button>
+                <button class="sort-btn" data-sort="rarity">Rarity</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>Total Brainrots</h3>
+                <p id="totalUnits">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Most Efficient</h3>
+                <p id="mostEfficient">-</p>
+            </div>
+            <div class="stat-box">
+                <h3>Highest Income</h3>
+                <p id="highestIncome">-</p>
+            </div>
+        </div>
+
+        <div class="units-container" id="unitsContainer">
+            <!-- Units will be populated here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>This is an unofficial fan-made tool for the Roblox game "Steal a Brainrot". All game content belongs to its respective owners.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
